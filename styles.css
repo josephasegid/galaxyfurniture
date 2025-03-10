@@ -1,163 +1,169 @@
 /* General Styles */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* White background */
+  color: #000677; /* Blue text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #000677; /* Blue text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for better visibility */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #000677; /* Blue text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for better visibility */
+}
+
+/* Social Media Buttons */
+.social-media-buttons,
+.branch-buttons,
+.phone-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.social-button,
+.branch-button,
+.phone-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.5rem;
+  background-color: #fffb00; /* Yellow background */
+  color: #000677; /* Blue text */
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 100%;
+  max-width: 200px;
+  border: 2px solid #000677; /* Blue border */
+}
+
+.social-button:hover,
+.branch-button:hover,
+.phone-button:hover {
+  transform: scale(1.05);
+  background-color: #005bb5; /* Darker blue on hover */
+  color: #ffffff; /* White text on hover */
+  border-color: #005bb5; /* Darker blue border on hover */
+}
+
+.social-button span,
+.branch-button span,
+.phone-button span {
+  margin-left: 0.5rem;
+}
+
+/* Icon Animations */
+@keyframes float {
+  0% {
+    transform: translateY(0);
   }
-  
-  .container {
-    text-align: center;
-    padding: 20px;
+  50% {
+    transform: translateY(-10px);
   }
-  
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.social-button i,
+.branch-button i,
+.phone-button i {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Furniture Products Section */
+.products-section {
+  margin-top: 2rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.product-card {
+  background-color: #ffffff; /* White background */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #000677; /* Blue border */
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card p {
+  padding: 1rem;
+  font-size: 1.2rem;
+  margin: 0;
+  color: #000677; /* Blue text */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
   h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: #000677;
+    font-size: 3rem;
   }
-  
+
   h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #000677;
+    font-size: 2.5rem;
   }
-  
-  /* Social Media Buttons */
-  .social-media-buttons,
-  .branch-buttons,
-  .phone-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    margin-bottom: 2rem;
-  }
-  
+
   .social-button,
   .branch-button,
   .phone-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.8rem 1.5rem;
-    background-color: #fffb00;
-    color: #000677;
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    width: 100%;
-    max-width: 200px;
-  }
-  
-  .social-button:hover,
-  .branch-button:hover,
-  .phone-button:hover {
-    transform: scale(1.05);
-    background-color: #005bb5;
-  }
-  
-  .social-button span,
-  .branch-button span,
-  .phone-button span {
-    margin-left: 0.5rem;
-  }
-  
-  /* Icon Animations */
-  @keyframes float {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-  
-  .social-button i,
-  .branch-button i,
-  .phone-button i {
-    animation: float 3s ease-in-out infinite;
-  }
-  
-  /* Furniture Products Section */
-  .products-section {
-    margin-top: 2rem;
-  }
-  
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    padding: 1rem;
-  }
-  
-  .product-card {
-    background-color: #2a2a2a;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .product-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  }
-  
-  .product-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .product-card p {
-    padding: 1rem;
+    padding: 1rem 2rem;
     font-size: 1.2rem;
-    margin: 0;
-    color: #fff;
+    width: auto;
   }
-  
-  /* Responsive Design */
-  @media (min-width: 768px) {
-    h1 {
-      font-size: 3rem;
-    }
-  
-    h2 {
-      font-size: 2.5rem;
-    }
-  
-    .social-button,
-    .branch-button,
-    .phone-button {
-      padding: 1rem 2rem;
-      font-size: 1.2rem;
-      width: auto;
-    }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
   }
-  
-  @media (min-width: 1024px) {
-    h1 {
-      font-size: 4rem;
-    }
-  
-    h2 {
-      font-size: 3rem;
-    }
-  
-    .social-button,
-    .branch-button,
-    .phone-button {
-      padding: 1.2rem 2.5rem;
-      font-size: 1.5rem;
-    }
+
+  h2 {
+    font-size: 3rem;
   }
+
+  .social-button,
+  .branch-button,
+  .phone-button {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.5rem;
+  }
+}
