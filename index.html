@@ -3,106 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galaxy Furniture</title>
+  <meta name="theme-color" content="#002951">
+  <title>Galaxy Furniture – Link Tree</title>
+  <link rel="preload" href="styles.css" as="style">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Galaxy Furniture</h1>
+  <div class="page">
+    <div class="stars" aria-hidden="true"></div>
+    <div class="nebula" aria-hidden="true"></div>
 
-
-    <!-- Logo Section -->
-<div class="logo-container">
-  <div class="logo"></div>
-</div>
-
-    <!-- Social Media Buttons -->
-    <div class="social-media-buttons">
-      <a href="https://www.tiktok.com/@galaxyfurnitureet?_t=8oN60dmx3e2&_r=1" target="_blank" class="social-button">
-        <i class="fab fa-tiktok"></i>
-        <span>TikTok</span>
-      </a>
-      <a href="https://t.me/galaxyfurnitureet" target="_blank" class="social-button">
-        <i class="fab fa-telegram"></i>
-        <span>Telegram</span>
-      </a>
-      <a href="https://www.instagram.com/galax.yfurniture?igsh=MWdwY2kxd3JuenY5YQ==" target="_blank" class="social-button">
-        <i class="fab fa-instagram"></i>
-        <span>Instagram</span>
-      </a>
-      <a href="https://www.facebook.com/profile.php?id=100090045654109&mibextid=ZbWKwL" target="_blank" class="social-button">
-        <i class="fab fa-facebook"></i>
-        <span>Facebook</span>
-      </a>
-    </div>
-
-    <!-- Branch Locations -->
-    <div class="branch-section">
-      <h2>Our Branches</h2>
-      <div class="branch-buttons">
-        <a href="https://maps.app.goo.gl/RAoqRD9LgZZ6xapD7" target="_blank" class="branch-button">
-          <i class="fas fa-map-marker-alt"></i>
-          <span>Semit Branch</span>
-        </a>
-        <a href="https://maps.app.goo.gl/rrWogFtc75kLFemQ9" target="_blank" class="branch-button">
-          <i class="fas fa-map-marker-alt"></i>
-          <span>Goro Branch</span>
-        </a>
-        <a href="https://maps.app.goo.gl/LcqpuRb3yq9GGGfa9" target="_blank" class="branch-button">
-          <i class="fas fa-map-marker-alt"></i>
-          <span>Figa Branch</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- Phone Numbers -->
-    <div class="phone-section">
-      <h2>Contact Us</h2>
-      <div class="phone-buttons">
-        <a href="tel:0965333435" class="phone-button">
-          <i class="fas fa-phone"></i>
-          <span>0965333435 Figa Branch</span>
-        </a>
-        <a href="tel:0966333435" class="phone-button">
-          <i class="fas fa-phone"></i>
-          <span>0966333435 Goro Branch</span>
-        </a>
-        <a href="tel:0967333435" class="phone-button">
-          <i class="fas fa-phone"></i>
-          <span>0967333435 Semit Branch</span>
-        </a>
-        <a href="tel:0964333435" class="phone-button">
-          <i class="fas fa-phone"></i>
-          <span>0964333435 Figa Branch</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- Furniture Products Section -->
-    <div class="products-section">
-      <h2>Our Furniture Products</h2>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="images\Untitled design.png" alt="Furniture 1">
-          <p>Modern Sofa</p>
+    <main class="card" role="main">
+      <header class="card__header">
+        <div class="avatar" aria-hidden="true"></div>
+        <div class="title">
+          <h1>Galaxy Furniture</h1>
+          <p class="subtitle">Local craft. Modern style. Delivered fast.</p>
         </div>
-        <div class="product-card">
-          <img src="images\dining.png" alt="Furniture 2">
-          <p>Dining Tables Table</p>
-        </div>
-        <div class="product-card">
-          <img src="images/Borcelle.png" alt="Furniture 3">
-          <p>Beds</p>
-        </div>
-        <div class="product-card">
-          <img src="images\all.png" alt="Furniture 4">
-          <p>Closets Shoes Shelf and Many</p>
-        </div>
-      </div>
-    </div>
+      </header>
+
+      <section class="links" aria-label="Links">
+        <h2 class="section-title">Explore</h2>
+
+        <a class="link" href="https://www.tiktok.com/@galaxyfurnitureet?_t=8oN60dmx3e2&_r=1" target="_blank" rel="noopener" aria-label="TikTok">
+          <span class="link__icon" aria-hidden="true">
+            <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <path d="M205.8 108.7c-21.5 0-39-8.9-51.6-23.2v69.8c0 27.4-22.3 49.6-49.6 49.6S54.9 182.7 54.9 155.3s22.3-49.6 49.6-49.6c4.6 0 9.1.7 13.4 2.1v-44c-8.5-2.8-17.4-4.3-26.6-4.3C46 59.5 16 89.5 16 126.7s30 67.2 67.2 67.2 67.2-30 67.2-67.2V68.1h.1c17.5 19.5 42.2 31.2 69 31.2v9.4z"/>
+            </svg>
+          </span>
+          <span class="link__text">TikTok</span>
+          <span class="link__badge">New</span>
+        </a>
+
+        <a class="link" href="https://t.me/Galaxy_furniture" target="_blank" rel="noopener" aria-label="Telegram">
+          <span class="link__icon" aria-hidden="true">
+            <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <path d="M120 0C53.8 0 0 53.8 0 120s53.8 120 120 120 120-53.8 120-120S186.2 0 120 0zm55.6 79.6l-16.6 78.5c-1.2 4.6-4.4 5.7-8.9 3.6l-24.6-18.2-11.9 11.5c-1.3 1.3-2.4 2.4-4.9 2.4l1.7-24.1 43.8-39.6c1.9-1.7-.4-2.6-3-0.9L86.7 118l-23.6-7.4c-5.1-1.6-5.2-5.1 1.1-7.6l92-35.6c4.2-1.6 7.9 0.9 6.4 7.2z"/>
+            </svg>
+          </span>
+          <span class="link__text">Telegram</span>
+        </a>
+
+        <a class="link" href="https://www.instagram.com/galax.yfurniture" target="_blank" rel="noopener" aria-label="Instagram">
+          <span class="link__icon" aria-hidden="true">
+            <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <path d="M224 202.66A53.34 53.34 0 1 0 277.34 256 53.38 53.38 0 0 0 224 202.66zm124.71-41a54.1 54.1 0 0 0-30.17-30.17C289.11 124 224 124 224 124s-65.11 0-94.54 7.49a54.1 54.1 0 0 0-30.17 30.17C92 162.89 92 224 92 224s0 61.11 7.49 94.54a54.1 54.1 0 0 0 30.17 30.17C158.89 348 224 348 224 348s65.11 0 94.54-7.49a54.1 54.1 0 0 0 30.17-30.17c7.49-33.43 7.49-94.54 7.49-94.54s0-61.11-7.49-94.54zM224 338a82 82 0 1 1 82-82 82.09 82.09 0 0 1-82 82zm85.6-148.7a19.2 19.2 0 1 1-19.2-19.2 19.2 19.2 0 0 1 19.2 19.2z"/>
+            </svg>
+          </span>
+          <span class="link__text">Instagram</span>
+        </a>
+
+        <a class="link" href="https://www.facebook.com/profile.php?id=100090045654109&mibextid=ZbWKwL" target="_blank" rel="noopener" aria-label="Facebook">
+          <span class="link__icon" aria-hidden="true">
+            <svg viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <path d="M279.14 288l14.22-92.66h-88.91V127.41c0-25.35 12.42-50.06 52.24-50.06H293V6.26S259.55 0 225.36 0C141.09 0 89.09 54.42 89.09 154.48V195.3H0v92.66h89.09V512h107.7V288z"/>
+            </svg>
+          </span>
+          <span class="link__text">Facebook</span>
+        </a>
+
+        <div class="divider" aria-hidden="true"></div>
+
+        <a class="link" href="https://maps.app.goo.gl/msTfRgmG9tKXP9Ru6" target="_blank" rel="noopener" aria-label="Semit Branch location">
+          <span class="link__icon" aria-hidden="true">
+            <svg viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <path d="M168 0C75.1 0 0 75.1 0 168c0 88 94.1 190.9 158.8 265 12.3 13.7 35 13.7 47.3 0C289.9 358.9 384 256 384 168 384 75.1 308.9 0 216 0zm0 224c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z"/>
+            </svg>
+          </span>
+          <span class="link__text">Semit Branch</span>
+        </a>
+
+        <a class="link" href="https://maps.app.goo.gl/rrWogFtc75kLFemQ9" target="_blank" rel="noopener" aria-label="Goro Branch location">
+          <span class="link__icon" aria-hidden="true">
+            <svg viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <path d="M168 0C75.1 0 0 75.1 0 168c0 88 94.1 190.9 158.8 265 12.3 13.7 35 13.7 47.3 0C289.9 358.9 384 256 384 168 384 75.1 308.9 0 216 0zm0 224c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z"/>
+            </svg>
+          </span>
+          <span class="link__text">Goro Branch</span>
+        </a>
+
+        <a class="link" href="https://maps.app.goo.gl/LcqpuRb3yq9GGGfa9" target="_blank" rel="noopener" aria-label="Figa Branch location">
+          <span class="link__icon" aria-hidden="true">
+            <svg viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <path d="M168 0C75.1 0 0 75.1 0 168c0 88 94.1 190.9 158.8 265 12.3 13.7 35 13.7 47.3 0C289.9 358.9 384 256 384 168 384 75.1 308.9 0 216 0zm0 224c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z"/>
+            </svg>
+          </span>
+          <span class="link__text">Figa Branch</span>
+        </a>
+
+        <div class="divider" aria-hidden="true"></div>
+
+        <a class="link" href="tel:0965333435" aria-label="Call Figa Branch 0965333435">
+          <span class="link__icon" aria-hidden="true">
+            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <path d="M493.4 24.6l-104-24c-11.1-2.6-22.7 1.8-28.9 11.3l-48 76c-5.9 9.2-4.8 21.2 2.8 29l60.6 60.6c-34.1 71.9-88.2 126-160.1 160.1l-60.6-60.6c-7.8-7.8-19.8-8.7-29-2.8l-76 48c-9.4 6.2-13.9 17.8-11.3 28.9l24 104c2.2 9.6 10.5 16.4 20.3 16.4 256.2 0 464-207.8 464-464 0-9.8-6.8-18.1-16.4-20.3z"/>
+            </svg>
+          </span>
+          <span class="link__text">Figa: 0965333435</span>
+        </a>
+
+        <a class="link" href="tel:0967333435" aria-label="Call Semit Branch 0967333435">
+          <span class="link__icon" aria-hidden="true">
+            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <path d="M493.4 24.6l-104-24c-11.1-2.6-22.7 1.8-28.9 11.3l-48 76c-5.9 9.2-4.8 21.2 2.8 29l60.6 60.6c-34.1 71.9-88.2 126-160.1 160.1l-60.6-60.6c-7.8-7.8-19.8-8.7-29-2.8l-76 48c-9.4 6.2-13.9 17.8-11.3 28.9l24 104c2.2 9.6 10.5 16.4 20.3 16.4 256.2 0 464-207.8 464-464 0-9.8-6.8-18.1-16.4-20.3z"/>
+            </svg>
+          </span>
+          <span class="link__text">ሰሚት 72: 0967333435</span>
+        </a>
+
+        <a class="link" href="tel:0966333435" aria-label="Call Goro Branch 0966333435">
+          <span class="link__icon" aria-hidden="true">
+            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <path d="M493.4 24.6l-104-24c-11.1-2.6-22.7 1.8-28.9 11.3l-48 76c-5.9 9.2-4.8 21.2 2.8 29l60.6 60.6c-34.1 71.9-88.2 126-160.1 160.1l-60.6-60.6c-7.8-7.8-19.8-8.7-29-2.8l-76 48c-9.4 6.2-13.9 17.8-11.3 28.9l24 104c2.2 9.6 10.5 16.4 20.3 16.4 256.2 0 464-207.8 464-464 0-9.8-6.8-18.1-16.4-20.3z"/>
+            </svg>
+          </span>
+          <span class="link__text">ጎሮ: 0966333435</span>
+        </a>
+
+        <a class="link" href="#" data-copy="0965333435" aria-label="Copy Figa phone number">
+          <span class="link__icon" aria-hidden="true">
+            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <path d="M497.941 74.941l-56-56C436.352 14.336 430.175 12 423.941 12H192c-35.346 0-64 28.654-64 64v48H72c-39.701 0-72 32.299-72 72v304c0 39.701 32.299 72 72 72h304c39.701 0 72-32.299 72-72V199.941c0-6.234-2.336-12.411-6.059-16.941zM384 448H72V200c0-13.255 10.745-24 24-24h96v104c0 39.701 32.299 72 72 72h104v96zm-44-272H272V128h41.941L340 152z"/>
+            </svg>
+          </span>
+          <span class="link__text">Copy Figa phone</span>
+        </a>
+
+        <p class="info">Tap a link to open it, or tap &ldquo;Copy phone&rdquo; to copy the number.</p>
+      </section>
+
+      <div class="toast" role="status" aria-live="polite"></div>
+    </main>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
